@@ -20,5 +20,15 @@ public class Main {
         System.out.println("Unsorted Array = " + Arrays.toString(unsorted_array2));
         int[] sorted_array2 = shell_sort.sort(unsorted_array2);
         System.out.println("Sorted Array = " + Arrays.toString(sorted_array2));
+
+        //Puts a line in the console
+        System.out.println();
+
+        //Merge sort test
+        System.out.println("Merge Sort Demo:");
+        int[] unsorted_array3 = {6, 2, 9, 4, 7, 3, 1, 5, 8, 0};
+        System.out.println("Unsorted Array = " + Arrays.toString(unsorted_array3));
+        int[] sorted_array3 = merge_sort.sort(unsorted_array3);
+        System.out.println("Sorted Array = " + Arrays.toString(sorted_array3));
     }
 }
