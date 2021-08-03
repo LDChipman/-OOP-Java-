@@ -1,18 +1,4 @@
-import java.util.Arrays;
-
 public class selection_sort {
-
-    public static void main(String[] args) {
-
-        //Prints the Name of the sort, an unsorted array of integers and the sorted list
-        System.out.println("Selection Sort Demo:");
-        int[] unsorted_array = {6, 2, 9, 4, 7, 3, 1, 5, 8, 0};
-        System.out.println("Unsorted Array = " + Arrays.toString(unsorted_array));
-        int[] sorted_array = sort(unsorted_array, 0);
-        System.out.println("Sorted Array = " + Arrays.toString(sorted_array));
-        
-    }
-
 
     //Sorts an array of integers in ascending order using a selection sort algorithm
     public static int[] sort(int[] array, int i){
