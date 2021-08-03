@@ -1,0 +1,13 @@
+1. Find the gap
+
+2. compare the numbers at index 0 and index + gap
+
+3. swap them if num 1 is higher than num 2
+
+4. if swapped then check the numbers at index 0 - gap and index 0 and run from step 3 with index being set to 0 - gap
+
+5. continue at the original index
+
+6. compare numbers at original index and index + gap and run from step 3 until youve checked all numbers in the array
+
+7. set gap to gap/2 and run from step 2 until gap = 0
