@@ -1,0 +1,13 @@
+1. take an array of integers and an index to start at named i
+
+2. if i is greater than the than the length of the array return the now sorted list
+
+3. set the integer at index i to a variable named min
+
+4. for each integer in the array check if it is lower than min
+
+5. if the number is lower than min then save that number to min and the index of min otherwise check the next number
+
+6. once youve checked all swap the number at index i with the number at the index min was at
+
+7. rerun this code with the array and the index + 1
