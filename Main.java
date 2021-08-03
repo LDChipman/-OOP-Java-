@@ -18,7 +18,7 @@ public class Main {
         System.out.println("Shell Sort Demo:");
         int[] unsorted_array2 = {6, 2, 9, 4, 7, 3, 1, 5, 8, 0};
         System.out.println("Unsorted Array = " + Arrays.toString(unsorted_array2));
-        int[] sorted_array2 = shell_sort.sort(unsorted_array2, 0);
+        int[] sorted_array2 = shell_sort.sort(unsorted_array2);
         System.out.println("Sorted Array = " + Arrays.toString(sorted_array2));
     }
 }
