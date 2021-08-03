@@ -2,34 +2,44 @@ public class merge_sort {
 
     public static int[] sort(int[] array){
 
+        //Checks if the arrays have been reduced to 1 element each if so moves on to merging them back together
         if (array.length == 1) {
 
             return array;
             
         }
 
+        //Finds the midway point in the array
         int array_mid = array.length/2;
 
+        //Creates arrays of the sizes needed to split the first array in two as evenly as possible
         int[] array1 = new int[array_mid];
         int[] array2 = new int[(array.length)-array_mid];
 
+        //Starts the index for the second for loop
         int index = 0;
 
-        for (int n : array) {
+        /*Sets the ints in array1 to the ints in array until array1 runs out of space
+          and increments the index for the second loop by one each time
+        */
+        for (int i = 0; i < array1.length; i++) {
+            array1[i] = array[i];
+            index++;
+        }
 
-            if (index < array.length/2){
-                array1[index] = n;
-            } else {
-                array2[index-(array.length/2)] = n;
-            }
+        //Sets the ints in array2 to the ints in array beginning where the last array ended
+        for (int i = 0; i < array2.length; i++) {
 
+            array2[i] = array[index];
             index++;
             
         }
 
+        //Sets array1 and 2 to two arrays of half sized arrays and sorts them
         array1 = sort(array1);
         array2 = sort(array2);
 
+        //Returns the sorted array
         return mergeSort(array1, array2, array.length);
     }
 
@@ -78,6 +88,7 @@ public class merge_sort {
 
         }
         
+        //Returns the sorted array
         return array3;
     }
     
