@@ -1,0 +1,25 @@
+Selection Sort: O(n^2):
+
+Any situation where the number of items is small and/or to check if something is sorted
+
+reference: https://medium.com/madhash/selection-sort-in-a-nutshell-how-when-where-932275135c00
+
+
+
+Shell Sort: O(n^2):
+
+Good for a list of wildly unsorted numbers due to the fact that it checks far apart numbers first, 
+though i feel that it would be quite slow on a large list and it wouldn't speed up much if it was already 
+partially sorted 
+
+reference: https://en.wikipedia.org/wiki/Shellsort
+
+
+
+Merge Sort: O(nlogn):
+
+Great for sorting large lists of items as long as space is of no concern
+
+references: 
+    https://medium.com/karuna-sehgal/a-simplified-explanation-of-merge-sort-77089fe03bb2#:~:text=Merge%20Sort%20is%20useful%20for,the%20runtime%20is%20O(nlogn)
+    https://www.geeksforgeeks.org/quick-sort-vs-merge-sort/
