@@ -1,0 +1,22 @@
+1. create two arrays each containing half of the previous arrays
+
+2. repeat step 1 until all arrays contain 1 element
+
+3. while array 1 and array 2 have elements do step 4 and 5
+
+4. if the first int in array 1 in lower take it and put it on the end of array 3
+
+5. otherwise take the first int and array 2 put it on the end of array 3
+
+6. while array 1 still has elements do step 7
+
+7. take the first element at the end of array 1 and put it on the end of array 3
+
+8. while array 2 still has elements do step 9
+
+9. take the first element at the end of array 2 and put it on the end of array 3
+
+10. return array 3
+
+
+
